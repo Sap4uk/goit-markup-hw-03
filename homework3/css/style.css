@@ -18,6 +18,9 @@ body {
   font-family: roboto, sans-serif;
   font-style: normal;
 }
+* {
+  padding: 0px;
+}
 
 ul {
   list-style: none;
@@ -69,6 +72,11 @@ a {
 .site-nav .link.current {
   color: var(--accent-color);
 }
+
+.site-nav {
+  margin: 0;
+  padding: 0;
+}
 /* hero */
 
 .hero,
@@ -76,6 +84,8 @@ a {
   background-color: #2f303a;
 }
 .hero h1 {
+  margin-top: 0;
+  margin-bottom: 40px;
   color: var(--primary-white-color);
   font-weight: 900;
   font-size: 44px;
@@ -84,6 +94,11 @@ a {
   letter-spacing: 0.06em;
   text-transform: uppercase;
 }
+
+.hero {
+  margin-bottom: 94px;
+}
+
 .button {
   color: var(--primary-white-color);
   background-color: var(--accent-color);
@@ -113,6 +128,8 @@ a {
   line-height: 1.14;
   letter-spacing: 0.03em;
   text-transform: uppercase;
+  margin-top: 0;
+  margin-bottom: 10px;
 }
 
 .section-title p {
@@ -121,26 +138,46 @@ a {
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
+  margin: 0;
 }
 
-/* section-about */
-.section-about > h2 {
+.section-title {
+  margin-top: 0;
+  margin-bottom: 94px;
+}
+
+.section-about h2 {
   font-size: 36px;
   line-height: 1.16;
   text-align: center;
   letter-spacing: 0.03em;
+  margin: 0;
+  margin-bottom: 50px;
+}
+
+.section-about {
+  margin-bottom: 94px;
+}
+
+.section-about ul {
+  margin-top: 0;
+  margin-bottom: 0;
 }
 
 /* section team */
 .section-team {
   background-color: var(--main-bg-color);
+  padding-top: 94px;
+  padding-bottom: 94px;
 }
-.section-team .team-title {
+.team-title {
   font-weight: 700;
   font-size: 36px;
   line-height: 1.16;
   text-align: center;
   letter-spacing: 0.03em;
+  margin-top: 0;
+  margin-bottom: 50px;
 }
 
 .team-list h3 {
@@ -149,6 +186,9 @@ a {
   line-height: 1.18;
   text-align: center;
   letter-spacing: 0.03em;
+  margin-top: 0;
+  margin-bottom: 10px;
+  padding-top: 30px;
 }
 .team-list p {
   font-weight: 400;
@@ -156,10 +196,14 @@ a {
   line-height: 1.18;
   text-align: center;
   letter-spacing: 0.03em;
+  color: var(--title-text-color);
+  margin-top: 0;
+  margin-bottom: 0;
 }
 
-.team-list p {
-  color: var(--title-text-color);
+.team-list {
+  margin-top: 0;
+  margin-bottom: 0;
 }
 
 /* .team-list li {
@@ -207,11 +251,17 @@ a {
 }
 
 /* exampls */
+.h1 {
+  margin-top: 0;
+  margin-bottom: 0;
+}
 .cards h2 {
   font-weight: 700;
   font-size: 18px;
   line-height: 2;
   letter-spacing: 0.06em;
+  margin-bot: 4px;
+  padding-top: 20px;
 }
 
 .cards p {
@@ -222,4 +272,15 @@ a {
 }
 .studio {
   color: var(--primary-white-color);
+}
+
+.container-button {
+  margin-top: 0;
+  margin-bottom: 34px;
+}
+/* home work 3 */
+.container {
+  width: 1200px;
+  padding-left: 15px;
+  padding-right: 15px;
 }
