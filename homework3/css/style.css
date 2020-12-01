@@ -29,9 +29,12 @@ ul {
 a {
   text-decoration: none;
 }
+/* header */
+
 /* logo */
 .logo {
   color: black;
+
   font-weight: 700;
   font-size: 26px;
   line-height: 1.19;
@@ -44,6 +47,10 @@ a {
 /* site nav*/
 
 .site-nav .link {
+  display: block;
+  padding-top: 32px;
+  padding-bottom: 32px;
+
   color: var(--primary-text-color);
 
   font-weight: 500;
@@ -58,6 +65,7 @@ a {
 }
 
 .link-nav {
+  display: block;
   color: var(--title-text-color);
   font-weight: 500;
   font-size: 14px;
@@ -75,7 +83,34 @@ a {
 
 .site-nav {
   margin: 0;
-  padding: 0;
+  margin-left: 93px;
+  display: flex;
+  align-items: center;
+}
+
+.site-nav .item + .item {
+  margin-left: 50px;
+}
+
+.address-nav {
+  display: flex;
+  align-items: center;
+  margin: 0;
+  margin-left: auto;
+}
+
+.address-nav .item + .item {
+  margin-left: 50px;
+}
+
+.main-nav {
+  display: flex;
+  align-items: center;
+}
+
+.nav {
+  display: flex;
+  align-items: center;
 }
 /* hero */
 
@@ -260,7 +295,7 @@ a {
   font-size: 18px;
   line-height: 2;
   letter-spacing: 0.06em;
-  margin-bot: 4px;
+  margin-bottom: 4px;
   padding-top: 20px;
 }
 
@@ -283,4 +318,5 @@ a {
   width: 1200px;
   padding-left: 15px;
   padding-right: 15px;
+  text-align: center;
 }
