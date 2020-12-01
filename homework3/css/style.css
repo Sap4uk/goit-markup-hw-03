@@ -106,6 +106,8 @@ a {
 .main-nav {
   display: flex;
   align-items: center;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .nav {
@@ -132,6 +134,12 @@ a {
 
 .hero {
   margin-bottom: 94px;
+  text-align: center;
+}
+
+.hero .container {
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .button {
@@ -140,7 +148,6 @@ a {
   font-weight: 700;
   font-size: 16px;
   line-height: 1.87;
-  display: flex;
   align-items: center;
   text-align: center;
   letter-spacing: 0.06em;
@@ -177,8 +184,14 @@ a {
 }
 
 .section-title {
+  display: flex;
   margin-top: 0;
   margin-bottom: 94px;
+}
+
+.section .container {
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .section-about h2 {
