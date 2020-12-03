@@ -114,6 +114,7 @@ a {
   display: flex;
   align-items: center;
 }
+
 /* hero */
 
 .hero,
@@ -136,11 +137,6 @@ a {
   padding-top: 200px;
   margin-bottom: 94px;
   text-align: center;
-}
-
-.hero .container {
-  margin-left: auto;
-  margin-right: auto;
 }
 
 .button {
@@ -168,8 +164,7 @@ a {
 .section {
   font-size: 14px;
 }
-.section-title h3,
-.section-title h2 {
+.section-title h3 {
   color: var(--primary-text-color);
   font-weight: 700;
   font-size: 14px;
@@ -191,15 +186,29 @@ a {
 
 .section-title {
   display: flex;
-  margin-top: 0;
+  padding: 0;
+  margin: 0;
   margin-bottom: 94px;
 }
 
-.section .container {
-  margin-left: auto;
-  margin-right: auto;
+.section-title .item {
+  width: calc((100% - 90px) / 4);
+  margin-right: 30px;
 }
 
+.item:nth-child(4n) {
+  margin-right: 0px;
+}
+
+.team-list > .item {
+  background: var(--primary-white-color);
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 0px 0px 4px 4px;
+  padding-bottom: 30px;
+}
+
+/* чум мы занимаемся */
 .section-about h2 {
   font-size: 36px;
   line-height: 1.16;
@@ -217,6 +226,19 @@ a {
   margin-top: 0;
   margin-bottom: 0;
 }
+
+.work-list {
+  display: flex;
+}
+
+.work-list .item {
+  margin-right: 30px;
+}
+.work-list .item:nth-child(3n) {
+  margin-right: 0;
+}
+
+/* чeм мы занимаемся */
 
 /* section team */
 .section-team {
@@ -258,12 +280,16 @@ a {
 .team-list {
   margin-top: 0;
   margin-bottom: 0;
+  display: flex;
 }
 
-/* .team-list li {
-  display: inline-block;
-} */
+.team-list .item {
+  margin-right: 30px;
+}
 
+.team-list .item:nth-child(4n) {
+  margin-right: 0;
+}
 /* address */
 
 .address .link {
@@ -284,17 +310,51 @@ a {
   font-style: normal;
 }
 
+.footer-cont {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 60px 0 30px 0;
+}
+
+.footer-address {
+  text-align: left;
+}
+
 /* PORTFOLIO */
+
+.section-porfolio h1 {
+  display: none;
+}
 
 .button-portfolio {
   color: var(--primary-text-color);
-  background-color: #f5f4fa;
+  background-color: var(--main-bg-color);
   font-weight: 500;
   font-size: 16px;
   line-height: 1.62;
   text-align: center;
   letter-spacing: 0.03em;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 4px;
+  display: inline-block;
+  border: none;
+  padding: 6px 22px;
 }
+
+.container-button .item {
+  margin-right: 8px;
+}
+
+.container-button .item:nth-child(5n) {
+  margin-right: 0;
+}
+
+.container-button {
+  display: flex;
+  justify-content: center;
+}
+
 .button-portfolio:focus {
   color: var(--accent-color);
 }
@@ -305,11 +365,19 @@ a {
 }
 
 /* exampls */
-.h1 {
-  margin-top: 0;
-  margin-bottom: 0;
+
+.section-porfolio {
+  padding-top: 94px;
+  padding-bottom: 94px;
 }
+
+.portfolio-title {
+  margin: 0;
+  padding-top: 50px;
+}
+
 .cards h2 {
+  color: var(--primary-text-color);
   font-weight: 700;
   font-size: 18px;
   line-height: 2;
@@ -319,6 +387,7 @@ a {
 }
 
 .cards p {
+  color: var(--title-text-color);
   font-weight: 400;
   font-size: 16px;
   line-height: 1.87;
@@ -330,12 +399,36 @@ a {
 
 .container-button {
   margin-top: 0;
-  margin-bottom: 34px;
+  margin-bottom: 0;
 }
+
+.portfolio-title {
+  display: flex;
+  flex-wrap: wrap;
+  background: var(--primary-white-color);
+}
+
+.cards .item {
+  border: 1px solid #eeeeee;
+  box-sizing: border-box;
+}
+
+.cards .item {
+  width: calc((100% - 60px) / 3);
+  margin-right: 30px;
+  margin-bottom: 30px;
+}
+
+.cards .item:nth-child(3n) {
+  margin-right: 0;
+}
+
 /* home work 3 */
 .container {
   width: 1200px;
   padding-left: 15px;
   padding-right: 15px;
   text-align: center;
+  margin-left: auto;
+  margin-right: auto;
 }
