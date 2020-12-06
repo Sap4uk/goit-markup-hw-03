@@ -249,7 +249,7 @@ header {
 }
 
 .head-team {
-  padding: 30px 55px 30px 55px;
+  padding: 30px 40px 30px 40px;
 }
 
 .team-title {
@@ -310,13 +310,15 @@ header {
   letter-spacing: 0.03em;
 }
 .address-link {
-  display: block;
   color: var(--transparency-color);
   font-weight: 400;
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
-  padding-top: 9px;
+}
+
+.item-link {
+  margin-top: 9px;
 }
 
 .address {
